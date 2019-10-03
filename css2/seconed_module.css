@@ -1,0 +1,161 @@
+.main {
+  overflow: hidden; }
+
+.w1000 {
+  width: 1000px;
+  margin: 0 auto; }
+
+.content_l {
+  width: 362px;
+  overflow: hidden; }
+.l{
+  float: left;
+}
+.focus {
+  height: 40px;
+  line-height: 40px; }
+  .focus span {
+    display: block;
+    float: left; }
+
+.tadayfocus {
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 8px;
+  background: #438dcf;
+  font-size: 18px;
+  color: #fff;
+  position: relative; }
+  .tadayfocus a {
+    color: #fff; }
+
+.big_pic {
+  position: relative;
+  width: 362px;
+  height: 268px;
+  overflow: hidden;
+  margin-top: 10px; }
+
+.focusListTxt {
+  padding: 5px 9px;
+  border: 1px solid #eee;
+  border-top: 0;
+  background: #fdfdfd; }
+  .focusListTxt li {
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    width: 160px;
+    padding-left: 10px;
+    overflow: hidden; }
+
+#focus {
+  width: 362px;
+  height: 268px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto; }
+  #focus ul {
+    height: 270px;
+    position: absolute; }
+    #focus ul li {
+      float: left;
+      width: 360px;
+      height: 266px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #eee; }
+      #focus ul li img {
+        width: 360px;
+        height: 240px; }
+
+.bbsFine {
+  margin-top: 26px; }
+  .bbsFine h3 {
+    height: 26px;
+    line-height: 26px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #67a1d5; }
+  .bbsFine span {
+    display: inline-block; }
+
+.h3riight {
+  font-size: 12px;
+  font-weight: 100;
+  float: right; }
+
+.h3span {
+  color: #666;
+  font-size: 14px;
+  padding-left: 37px;
+  background: url("http://www.newmotor.com.cn/images/201412newindeximg/headico.png") no-repeat 0 -765px; }
+
+.bbsoDiv {
+  width: 360px;
+  overflow: hidden;
+  margin-top: 20px; }
+  .bbsoDiv .last {
+    margin-top: 35px; }
+
+.bbsoDiv-left {
+  float: left;
+  width: 120px; }
+
+.liImg {
+  width: 120px;
+  height: 90px;
+  float: left;
+  position: relative;
+  overflow: hidden; }
+  .liImg img {
+    width: 120px;
+    height: 90px; }
+
+.bbsoDiv-right {
+  padding-left: 128px; }
+
+.lilist {
+  margin: -1px 0 8px 0;
+  padding-left: 10px;
+  height: 18px;
+  overflow: hidden; }
+
+.Comments {
+  margin-top: 20px; }
+
+.focus-p {
+  position: relative;
+  width: 360px;
+  height: 240px;
+  background-color: #f9f9f9;
+  float: left; }
+  .focus-p .fPic {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .focus-p .fcon {
+    position: relative;
+    width: 100%;
+    float: left;
+    background: #000; }
+    .focus-p .fcon img {
+      width: 360px;
+      height: 240px; }
+  .focus-p .fbg {
+    bottom: 25px;
+    right: 40px;
+    position: absolute;
+    height: 21px;
+    text-align: center;
+    z-index: 200; }
+    .focus-p .fbg div {
+      margin: 4px auto 0;
+      overflow: hidden;
+      zoom: 1;
+      height: 14px; }
+    .focus-p .fbg .D1fBt {
+      display: none;
+      z-index: 10; }
+
+/*# sourceMappingURL=seconed_module.css.map */

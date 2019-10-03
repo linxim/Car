@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+
+}
+.mydiv {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  background: url("../img/login-bg.jpg") no-repeat 0 0;
+  background-size: 100%;
+  /* transform: translate3d(-50%,-50%,0); */
+}
+
+.mydiv>.mylogin {
+  width: 420px;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.layui-input {
+  background: radial-gradient(black, transparent);
+  box-shadow: 0 0 10px #66ccff inset;
+  color: #fff;
+  border: 1px solid #66ccff;
+}
+
+.layui-form-pane .layui-form-label{
+  background: radial-gradient(whitesmoke, transparent);
+  border: 1px solid #66ccff;
+  }
+.input-center{
+  margin-left: 219px;
+}
+
+/*# sourceMappingURL=common.css.map */

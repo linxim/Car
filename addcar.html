@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加车辆信息</title>
+    <link rel="stylesheet" href="./layui-v2.5.5//layui/css/layui.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/left.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header layui-bg-green">
+            <div class="layui-logo">车辆管理系统</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="">控制台</a></li>
+                <li class="layui-nav-item"><a href="">商品管理</a></li>
+                <li class="layui-nav-item"><a href="">用户</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">其它系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">邮件管理</a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="./img/p1.jpg" class="layui-nav-img">
+                        林夕
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退了</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-gray">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">车主</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="./motuo.html">车主信息</a></dd>
+                            <dd><a href="./addcar.html">车辆信息添加</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="./drivingId.html">驾驶证查询</a>
+
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="./owner.html">车辆信息查询</a>
+                   
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;">百度地图</a>
+                   
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;">管理信息</a>
+             
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                    
+                    </li>
+                    <li class="layui-nav-item"><a href="">云市场</a></li>
+                    <li class="layui-nav-item"><a href="">发布商品</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <div style="padding: 15px;">
+                <span class="layui-breadcrumb">
+                    <a href="">首页</a>
+                    <a href="">购物车</a>
+                    <a href="">订单</a>
+               
+                </span>
+            </div>
+            <hr>
+
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">车辆名称</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="carname" required lay-verify="required" placeholder="请输入"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                  
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">2d平面效果</label>
+                    <button type="button" class="layui-btn" id="cover">
+                        <i class="layui-icon">&#xe67c;</i>上传图片
+                    </button>
+                    <img src="" id="showimg" alt="">
+                    <input type="hidden" name="imgs" value="">
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">出产商</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="tp" required lay-verify="required" placeholder="请输入"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                   
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">生产商</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="pd" placeholder="请输入"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">中国地区</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">价格信息</label>
+                    <div class="layui-input-inline">
+                        <textarea name="ad" required lay-verify="required" placeholder="请输入" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">车辆测评</label>
+                    <div class="layui-input-block">
+                        <textarea name="ae" required lay-verify="required" placeholder="请输入" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="addcar">立即提交</button>
+                    </div>
+                </div>
+            </form>
+          
+        </div>
+
+        <div class="layui-footer">
+            © 2019-林夕-版权所有
+        </div>
+    </div>
+    <script src="./layui-v2.5.5/layui/layui.all.js"></script>
+    <script src="./js/admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+.wraper{
+    width: 1000px;
+    min-width: 1000px;
+    margin: 10px auto 0;
+
+}
+.hots{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top-width: 2px;
+}
+.hots-main{
+    float: left;
+    width: 100%;
+}
+.hots-tab-ctrl{
+    height: 32px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #e5e5e5;
+    a:hover{
+        color: black;
+    }
+    a{
+        display: inline-block;
+        width: 70px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        border-top: 2px solid #e5e5e5;
+        border-left: 1px solid #f4f4f4;
+        border-right: 1px solid #f4f4f4;
+        border-bottom:none;
+        color: orange;
+        margin: -2px 0 -1px;
+    }
+}
+.hots-tab-wrap{
+    position: relative;
+    .dl-hov{
+        height: 67px;
+        overflow: hidden;
+    }
+    .cars{
+        width: 845px;
+        margin-right: 2px;
+    }
+    .hots-tab-ddTf{
+        display: block;
+        color: #999;
+        font: 12px/1.2 "microsoft yahei";
+        a{
+            color: #999
+        }
+    }
+}
+.hots-tab-carItem{
+    float: left;
+    display: inline;
+    width: 150px;
+    overflow: hidden;
+    line-height: 22px;
+    padding-top:5px;
+    text-align: center;
+    a{
+        color: lightgreen;
+    }
+}
+.top_leftReco{
+    position: absolute;
+    background: #fff;
+    width: 240px;
+    height: 85px;
+    left: 756px;
+    top: 34px;
+    font-size: 12px;
+    p{
+        
+        color: #9d9d9d;
+        display: block;
+        margin: 15px 0 0 3px;
+        i{
+            font-style: normal;
+            display: block;
+            color: #800806;
+        }
+    }
+    a{
+        img{
+            float: left;
+            
+        }
+    }
+}
+.hots-tab-cont{
+    position: relative;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="./layui-v2.5.5/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./layui-v2.5.5/layui/layui.js"></script>
+</head>
+
+<body>
+    <div class="mydiv">
+        <form class="layui-form layui-form-pane mylogin" action="">
+            <div class="layui-form-item layui-input-block">
+                <label class="layui-form-label">用户</label>
+                <div class="layui-input-inline">
+                    <input type="username" name="username" required lay-verify="required" placeholder="请输入用户"
+                        autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item layui-input-block">
+                <label class="layui-form-label">密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class=" input-center">
+                    <button class="layui-btn" lay-submit lay-filter="login">立即提交</button>
+                
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        //Demo
+        layui.use('form', function () {
+            var form = layui.form;
+
+            //监听提交
+            form.on('submit(login)',function (data) {
+                let formdata = data.field;
+                
+                let xhr = new XMLHttpRequest();
+                //http://localhost:8081/user/login?username=${formdata.username}&password=${formdata.password}
+                xhr.open('get', `http://localhost:81/user/login?username=${formdata.username}&password=${formdata.password}`);
+                xhr.send();
+                xhr.onreadystatechange = function (){
+                    if (xhr.readyState != 4) return;
+                    // let result=xhr.responseText;
+                    let result = JSON.parse(xhr.responseText);
+                    console.log(result);
+                    layer.msg(result.msg);
+                    if (result.code == 1) {
+                        window.location.href = 'motuo.html';
+                    }
+                    console.log(result);
+
+                }
+                return false;
+           
+            });
+        });
+    </script>
+</body>
+
+</html>

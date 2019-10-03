@@ -1,0 +1,75 @@
+.content_r {
+  width: 230px;
+  overflow: hidden; }
+
+.r {
+  float: right; }
+
+.rightTab {
+  border: 1px solid #e9e9e9; }
+
+.tabdDiv {
+  width: 230px; }
+
+.TabUl {
+  width: 240px; }
+  .TabUl li {
+    float: left;
+    position: relative; }
+
+.clearfix {
+  display: block; }
+
+.TabDiv {
+  cursor: pointer;
+  float: left;
+  background: #fcfcfc;
+  text-align: center;
+  height: 39px;
+  border-bottom: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+  width: 114px;
+  overflow: hidden;
+  color: #999;
+  font-size: 14px;
+  line-height: 39px; }
+  .TabDiv a {
+    color: #666; }
+
+.specialDiv {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 5px; }
+
+.Special {
+  height: 31px;
+  line-height: 31px;
+  padding-left: 9px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  background: #f0f0f0; }
+  .Special span {
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #656565; }
+
+.speciali-ul {
+  padding: 3px 9px 4px 9px; }
+  .speciali-ul li {
+    font-size: 12px;
+    overflow: hidden;
+    background: url("http://www.newmotor.com.cn/images/201412newindeximg/headico.png") no-repeat 0 -724px;
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px; }
+
+.rightimgWH-r {
+  width: 230px;
+  height: 220px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=center_r.css.map */

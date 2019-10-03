@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width, initial-scale=1.0 -->
+    <meta name="viewport" content="摩托车 春风 本田 看车选车">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>机车木马</title>
+    <link rel="stylesheet" href="./layui-v2.5.5//layui/css/layui.css">
+
+    <!-- <script src="./js/admin.js"></script> -->
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/left.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header layui-bg-green">
+            <div class="layui-logo">车辆管理系统</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="">控制台</a></li>
+                <li class="layui-nav-item"><a href="">商品管理</a></li>
+                <li class="layui-nav-item"><a href="">用户</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">其它系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">邮件管理</a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="./img/p1.jpg" class="layui-nav-img">
+                        林夕
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退了</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-gray">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">车主</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="./motuo.html">车主信息</a></dd>
+                            <dd><a href="./addcar.html">车辆信息添加</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="./drivingId.html">驾驶证查询</a>
+
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;">车辆信息查询</a>
+
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;">百度地图</a>
+
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;">管理信息</a>
+
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+
+                    </li>
+                    <li class="layui-nav-item"><a href="">云市场</a></li>
+                    <li class="layui-nav-item"><a href="">发布商品</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <div style="padding:15px">
+                <span class="layui-breadcrumb">
+                    <a href="">首页</a>
+                    <a href="">图书管理</a>
+                    <a><cite>图书列表</cite></a>
+                </span>
+
+                <table id="bookslist" lay-filter="bookslist"></table>
+             
+            </div>
+
+
+        </div>
+
+        <div class="layui-footer">
+            © 2019-林夕-版权所有
+        </div>
+    </div>
+    <script src="./layui-v2.5.5/layui/layui.all.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
+</body>
+
+</html>
